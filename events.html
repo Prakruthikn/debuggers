@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Events — GMU Coding Club</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo"><img src="assets/logo.svg" alt="GMU Coding Club logo"></div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="events.html" class="nav-link">Events</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="team.html" class="nav-link">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <button class="hamburger" aria-label="menu">☰</button>
+</header>
+
+<main class="container">
+  <section class="events reveal">
+    <h1>Upcoming Events</h1>
+    <div class="event-list">
+      <article class="event-card reveal" data-delay="0">
+        <h3>Intro to Web Dev — Workshop</h3>
+        <p><strong>Date:</strong> September 10, 2025</p>
+        <p>Learn HTML, CSS, and JavaScript basics with an interactive build-along.</p>
+        <button class="btn btn-outline" data-event="webdev">Register</button>
+      </article>
+      <article class="event-card reveal" data-delay="100">
+        <h3>AI Bootcamp</h3>
+        <p><strong>Date:</strong> October 20, 2025</p>
+        <p>Two-day intensive on ML fundamentals and hands-on labs.</p>
+        <button class="btn btn-outline" data-event="aiboot">Register</button>
+      </article>
+      <article class="event-card reveal" data-delay="200">
+        <h3>GMU Hackathon 2026</h3>
+        <p><strong>Date:</strong> January 18–19, 2026</p>
+        <p>Open to teams of up to 4. Prizes and mentorship included.</p>
+        <button class="btn btn-outline" data-event="hack">Register</button>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="site-footer small">
+  <div class="container"><p>© GMU Coding Club</p></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

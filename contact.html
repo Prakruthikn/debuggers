@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — GMU Coding Club</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo"><img src="assets/logo.svg" alt="GMU Coding Club logo"></div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="events.html" class="nav-link">Events</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="team.html" class="nav-link">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <button class="hamburger" aria-label="menu">☰</button>
+</header>
+
+<main class="container">
+  <section class="contact reveal">
+    <h1>Contact Us</h1>
+    <p>Questions? Partnership? Reach out.</p>
+    <form id="contact-form" class="contact-form">
+      <input name="name" placeholder="Name" required>
+      <input name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" rows="6" required></textarea>
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+    <div class="map-card reveal" data-delay="100">
+      <h3>Location</h3>
+      <p>GM University Campus — Central Block</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer small">
+  <div class="container"><p>© GMU Coding Club</p></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

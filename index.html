@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GM University — Coding Club</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo"><img src="assets/logo.svg" alt="GMU Coding Club logo"></div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="events.html" class="nav-link">Events</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="team.html" class="nav-link">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <button class="hamburger" aria-label="menu">☰</button>
+</header>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <h1 class="glow">GM University</h1>
+      <p class="subtitle">Coding Club — Build, Learn, Collaborate</p>
+      <div class="cta-group">
+        <a href="events.html" class="btn btn-primary">Upcoming Events</a>
+        <a href="projects.html" class="btn btn-secondary">Explore Projects</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <img src="assets/bg-hero.svg" alt="Decorative background">
+    </div>
+  </section>
+
+  <section class="features container" id="features">
+    <h2 class="section-title">What we do</h2>
+    <div class="cards">
+      <article class="card reveal" data-delay="0"> 
+        <h3>Workshops</h3>
+        <p>Hands-on sessions: Web, ML, Game Dev, DevOps and more.</p>
+      </article>
+      <article class="card reveal" data-delay="100"> 
+        <h3>Hackathons</h3>
+        <p>24–48 hour team challenges with mentorship and prizes.</p>
+      </article>
+      <article class="card reveal" data-delay="200"> 
+        <h3>Projects</h3>
+        <p>Collaborative open-source projects and portfolio building.</p>
+      </article>
+      <article class="card reveal" data-delay="300"> 
+        <h3>Mentorship</h3>
+        <p>Senior students & alumni guide juniors through careers.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="spotlight container" id="spotlight">
+    <div class="split reveal" data-delay="0">
+      <div>
+        <h2>Featured Project — Campus Map</h2>
+        <p>An interactive campus map built with open data, live search and accessible UI.</p>
+        <a href="projects.html#campus-map" class="btn btn-outline">View project</a>
+      </div>
+      <div class="device">
+        <div class="screen">
+          <pre class="code-sample">// Live preview
+fetch('/api/map')
+  .then(r =&gt; r.json())
+  .then(d =&gt; console.log('map data', d))</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline container" id="timeline">
+    <h2 class="section-title">Annual Roadmap</h2>
+    <ol class="timeline-list">
+      <li class="reveal" data-delay="0"><strong>Aug:</strong> Freshers meet & greet</li>
+      <li class="reveal" data-delay="80"><strong>Sep:</strong> Intro to Web Dev workshop</li>
+      <li class="reveal" data-delay="160"><strong>Nov:</strong> Hackathon</li>
+      <li class="reveal" data-delay="240"><strong>Jan:</strong> Projects kickoff</li>
+      <li class="reveal" data-delay="320"><strong>Mar:</strong> Alumni talks & placements prep</li>
+    </ol>
+  </section>
+
+  <section class="cta container reveal" id="join">
+    <h2>Join the Club</h2>
+    <p>Open to all GMU students — beginner friendly. Sign up for updates and events.</p>
+    <form id="signup" class="signup-form" aria-label="Join the coding club">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <select name="interest">
+        <option>Web Development</option>
+        <option>Machine Learning</option>
+        <option>Game Dev</option>
+        <option>Competitive Programming</option>
+      </select>
+      <button class="btn btn-primary" type="submit">Sign up</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo.svg" alt="logo" class="footer-logo">
+        <p>GM University — Coding Club. Building skills and communities.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: codingclub@gmu.edu</p>
+        <p>Location: GM University Campus</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p class="socials">Twitter • GitHub • LinkedIn</p>
+      </div>
+    </div>
+    <p class="copyright">© GM University Coding Club — 2025</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

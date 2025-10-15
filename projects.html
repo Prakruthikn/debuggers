@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Projects — GMU Coding Club</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo"><img src="assets/logo.svg" alt="GMU Coding Club logo"></div>
+  <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="events.html" class="nav-link">Events</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="team.html" class="nav-link">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <button class="hamburger" aria-label="menu">☰</button>
+</header>
+
+<main class="container">
+  <section class="projects reveal">
+    <h1>Club Projects</h1>
+    <div class="filter-row">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="web">Web</button>
+      <button class="chip" data-filter="ml">ML</button>
+      <button class="chip" data-filter="game">Game</button>
+    </div>
+    <div class="project-grid">
+      <article class="project-card reveal" data-type="web">
+        <h3>Campus Map</h3><p>Searchable campus map with accessibility features.</p>
+        <a href="#" class="btn btn-outline">Repo</a>
+      </article>
+      <article class="project-card reveal" data-type="ml">
+        <h3>Diabetes Predictor</h3><p>Model-based health predictor built as a learning project.</p>
+        <a href="#" class="btn btn-outline">Repo</a>
+      </article>
+      <article class="project-card reveal" data-type="game">
+        <h3>HitMe Game</h3><p>Small 2D game made in Unity and WebGL export.</p>
+        <a href="#" class="btn btn-outline">Play</a>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="site-footer small">
+  <div class="container"><p>© GMU Coding Club</p></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
